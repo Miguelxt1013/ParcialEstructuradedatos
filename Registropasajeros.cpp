@@ -29,7 +29,12 @@ void registrar_pasajeros(){
 }
 
 void mostrar_pasajeros(){
-   
+    aux=cab;
+    while(aux!=NULL){
+        cout<<"Pasajero: "<<Nombre<<endl;
+        cout<<"Documento: "<<aux->Cedula<<endl;
+        aux = aux->sig;
+    }
 }
 
 void Destinos(){
